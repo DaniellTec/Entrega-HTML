@@ -1,0 +1,166 @@
+<!DOCTYPE html=es>
+
+<head>
+
+<title>Contactos</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"> 
+
+</head>
+
+<style>
+
+	body {
+
+		background-image : url('gallery.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+        background-color: black;
+	}
+
+</style>
+
+<body>
+
+<div class="topnav">
+
+<a href="home.html">Home</a> 
+<a href="galeria.html">Galería</a> 
+<a href="blog.html">Blog</a>
+<a class="active" href="contact.html">Contact</a> 
+
+</div>
+
+<br><br>
+
+<center>
+
+<h1 style="color:white">Formulario</h1>
+
+</center>
+
+    <form>
+
+        <p style="color:white">
+
+            <label>Nombre:</label>
+            <input type=text requiered id="name1" name="name1" placeholder="Introduzca Su Nombre">
+
+        </p>  
+
+        <p style="color:white">
+
+            <label>Primer Apellido:</label>
+            <input type=text requiered id="surname1" name="surname1" placeholder="Introduzca Su Primer Apellido">
+
+        </p>   
+
+
+        <p style="color:white">
+
+            <label>Segundo Apellido:</label>
+            <input type=text requiered id="surname2" name="surname2" placeholder="Introduzca Su Segundo Apellido">
+
+        </p>   
+
+        
+
+         <p style="color:white">
+
+            <label for="edad">Selecione Su Edad:</label>
+            <input type="number" min="18" max="99" step="1" id="edad">
+
+        </p>
+
+        <p style="color:white">
+
+            <label for="fecha">Indica Su Fecha De Nacimiento:</label>
+
+            <input type="date" required="date" name="date" id="fecha" value="2000-02-05">
+
+        </p>
+
+        <p>
+
+        <p style="color:white">
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" required="email" id="email" name="email" minlength="13" maxlength="30" placeholder="Introduza Su Correo Electrónico">
+
+        </p> 
+            
+        
+        <p style="color:white">
+
+            <label for="pass1">Contraseña:</label>
+            <input type="password" required id="passwd1" name="passwd1" inlength="8" placeholder="Introduza Contraseña">
+             
+        </p>
+ 
+        <p style="color:white">
+
+            <label for="pass2">Confirmar Contraseña:</label>
+            <input type="password" required id="passwd2" name="passwd2" minlength="8" placeholder="Confirme La Contraseña"> 
+        </p>
+
+          <p style="color:white">
+
+            <label for="biomes">Seleccione Su Bioma Favorito:</label>
+            <input type="text" id="biomes" name="biomes" list="biomes1" required pattern="[Tt]aiga|[Mm]anglar|[Dd]esierto|[Ss]abana">
+
+            <datalist id="biomes1">
+
+               <option>Taiga-Tundra</option> 
+               <option>Manglar</option> 
+               <option>Desierto Frío</option> 
+               <option>Sabana</option> 
+               
+            </datalist>  
+
+        </p>
+
+        <p style="color:white">
+
+         <label for="quest1"> - Pregunta 1, Te Gustaría Visitar Alguno De Esos Lugares? :</label> <br> <br>
+            
+         <input type="checkbox" id="ans1" name="ans1" value="ans1">
+         <label for="quest1">Sí, Me Gustaría Muchísimo.</label><br>
+
+         <input type="checkbox" id="ans2" name="ans2" value="ans2">
+         <label for="ans2">No, Prefiero Buscar Otros Lugares.</label><br>
+
+         <input type="checkbox" id="ans3" name="ans3" value="ans3">
+         <label for="ans3">Ójala Pudiera Ir.</label><br><br>
+
+         <p style="color:white">
+
+         <label for="quest1"> - Pregunta 2, Qué Te Ha Parecido Mi HTML? :</label> <br> <br>
+            
+         <input type="checkbox" id="quest2" name="quest4" value="quest4">
+         <label for="quest4">Sí, Está Bastante Bien.</label><br>
+
+         <input type="checkbox" id="ans5" name="ans5" value="ans5">
+         <label for="ans5">No, Me Ha Gustado.</label><br>
+
+         <input type="checkbox" id="ans6" name="ans6" value="ans6">
+         <label for="ans6">Está Genial!</label><br><br>
+        
+        <p style="color:white">
+
+            <label for="Confirmed">Acepto los terminos y condiciones</label>
+	        <input type="checkbox" id="Confirmed" name="Confirmed" required>
+ 
+        </p>
+
+         <p>
+
+          <button type="submit">Confirmar</button>
+
+        </p>
+          
+</form>
+
+</body>
+
+</html
